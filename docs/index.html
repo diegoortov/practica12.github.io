@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Práctica - Botones con íconos</title>
+
+  <!-- Font Awesome (íconos de marcas) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Archivo CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Botones con íconos de marca</h1>
+    <p class="small">Cada botón abre la página correspondiente en una nueva pestaña. Se usan clases de Font Awesome para mostrar los íconos de marca (fa-brands / fab) y un ícono de motocicleta para Honda.</p>
+
+    <div class="buttons">
+      <!-- TikTok -->
+      <a class="btn btn-tiktok" href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="Ir a TikTok">
+        <i class="fa-brands fa-tiktok fa-xl" aria-hidden="true"></i>
+        TikTok
+      </a>
+
+      <!-- Apple -->
+      <a class="btn btn-apple" href="https://www.apple.com" target="_blank" rel="noopener noreferrer" aria-label="Ir a Apple">
+        <i class="fa-brands fa-apple fa-xl" aria-hidden="true"></i>
+        Apple
+      </a>
+
+      <!-- Honda motos -->
+      <a class="btn btn-honda" href="https://www.honda.com" target="_blank" rel="noopener noreferrer" aria-label="Ir a Honda">
+        <i class="fa-solid fa-motorcycle fa-xl" aria-hidden="true"></i>
+        Honda Motos
+      </a>
+    </div>
+
+    <span class="caption">
+      Si prefieres el logo oficial de Honda (la “H” estilizada), reemplaza el 
+      <code>&lt;i class="fa-solid fa-motorcycle"&gt;&lt;/i&gt;</code> 
+      por un 
+      <code>&lt;img src="honda-logo.png" alt="Honda"&gt;</code> 
+      y sube la imagen al mismo directorio.
+    </span>
+  </div>
+</body>
+</html>
