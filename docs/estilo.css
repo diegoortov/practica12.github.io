@@ -1,0 +1,104 @@
+:root{
+  --radius: 12px;
+  --shadow: 0 6px 18px rgba(0,0,0,0.12);
+  --gap: 18px;
+  --pad: 14px 20px;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(180deg,#f7f7fb,#eef2f8);
+  color:#111;
+  padding:40px;
+}
+
+.card{
+  background: #fff;
+  border-radius:18px;
+  box-shadow: var(--shadow);
+  padding:28px;
+  max-width:820px;
+  width:100%;
+}
+
+h1{
+  margin:0 0 12px 0;
+  font-size:20px;
+  font-weight:600;
+}
+p.small{
+  margin:0 0 20px 0;
+  color:#555;
+  font-size:13px;
+}
+
+.buttons{
+  display:flex;
+  gap:var(--gap);
+  flex-wrap:wrap;
+}
+
+/* Botón base */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  padding:var(--pad);
+  border-radius:12px;
+  text-decoration:none;
+  color: #fff;
+  font-weight:600;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition:transform .12s ease, box-shadow .12s ease;
+  min-width:170px;
+  justify-content:center;
+}
+.btn:active{ transform: translateY(1px); }
+.btn:hover{ transform: translateY(-4px); box-shadow: 0 14px 36px rgba(0,0,0,0.12); }
+
+.btn i.fa-xl{ font-size:22px; }
+
+/* TikTok (negro + acento) */
+.btn-tiktok{
+  background: linear-gradient(180deg,#010101,#2b2b2b);
+  color:#fff;
+}
+
+/* Apple (sencillo, elegante) */
+.btn-apple{
+  background: linear-gradient(180deg,#111111,#4b4b4b);
+  color:#fff;
+}
+
+/* Honda (rojo, usando icono de moto) */
+.btn-honda{
+  background: linear-gradient(180deg,#d31b1b,#a91212);
+  color:#fff;
+}
+
+/* Variante: botón con fondo claro y borde */
+.btn-ghost{
+  background:transparent;
+  color: #111;
+  border: 2px solid rgba(0,0,0,0.08);
+  box-shadow:none;
+}
+
+/* Texto pequeño debajo */
+.caption{
+  display:block;
+  margin-top:10px;
+  font-size:12px;
+  color:#666;
+}
+
+/* Responsive */
+@media (max-width:520px){
+  .buttons{ gap:12px; }
+  .btn{ min-width: 140px; padding:12px 14px; }
+}
